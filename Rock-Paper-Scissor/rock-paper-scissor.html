@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <h1 style="display: flex; justify-content: center; ">Open Console for Score </h1>
+
+
+    <script>
+        // Taking output from PC
+        function getComputerChoice() {
+            r = Math.floor(Math.random() * 3);
+            if (r == 0) {
+                return 'rock';
+            } else if (r == 1) {
+                return 'paper';
+            } else {
+                return 'scissor';
+            }
+        }
+        // Taking input from User
+        function getHumanChoice() {
+            return prompt("Enter Your Choice(Stone/Paper/Scissor)")
+
+        }
+
+        // Initialising score variables
+        let humanScore = 0;
+        let computerScore = 0;
+
+        // Logic for Playing
+        function playRound(humanChoice, computerChoice) {
+            humanChoice = getHumanChoice().toLowerCase();
+            computerChoice = getComputerChoice();
+            if (humanChoice == 'rock') {
+                if (computerChoice == 'paper') {
+                    console.log("You Lose!! Computer chose Paper")
+                    computerScore += 1
+                } else if (computerChoice == 'scissor') {
+                    console.log("You Win!! Computer chose Scissor")
+                    humanScore += 1
+                } else if (computerChoice == 'rock') {
+                    console.log("Draw!! Computer chose Rock")
+                }
+
+            } else if (humanChoice == 'paper') {
+                if (computerChoice == 'scissor') {
+                    console.log("You Lose!! Computer chose Scissor")
+                    computerScore += 1
+                } else if (computerChoice == 'rock') {
+                    console.log("You Win!! Computer chose Rock")
+                    humanScore += 1
+                } else if (computerChoice == 'paper') {
+                    console.log("Draw!! Computer chose Paper")
+                }
+            } else if (humanChoice == 'scissor') {
+                if (computerChoice == 'rock') {
+                    console.log("You Lose!! Computer chose Rock")
+                    computerScore += 1
+                } else if (computerChoice == 'paper') {
+                    console.log("You Win!! Computer chose Paper")
+                    humanScore += 1
+                } else if (computerChoice == 'scissor') {
+                    console.log("Draw!! Computer chose Scissor")
+                }
+            }
+        }
+        //Playing Whole Game Logic
+        function playGame() {
+            if (humanScore == 5 || computerScore == 5) {
+                if (humanScore == 5) {
+                    console.log("You Win by a lead of " + (humanScore - computerScore))
+                }
+                else if (computerScore == 5) {
+                    console.log("You lose by a lag of " + (computerScore - humanScore))
+                }
+            } else {
+                playRound()
+                playGame()
+            }
+        }
+        playGame()
+
+    </script>
+
+</body>
+
+</html>
