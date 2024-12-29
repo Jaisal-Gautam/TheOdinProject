@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --body-clr:#fff;
+    --game-clr:rgba(210, 206, 206, 0.65);
+
+    --head-fnt:"Pixelify Sans", serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: var(--body-clr);
+}
+
+.heading{
+    background-color: var(--body-clr);
+    font-family: var(--head-fnt);
+    font-size: 6em;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.game{
+    margin: 5em 10em;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--game-clr);
+    box-shadow:  0.5px 0.5px 0.5px 1px rgba(128, 128, 128, 0.488); 
+}
+
+.showResult{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color: var(--main-clr);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.showResult #result{
+    padding: 10px;
+
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4em;
+    margin-bottom: 3em;
+
+}
+.play p{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 7em;
+    border: 5px solid #bd8d68;
+    border-radius: 20%;
+    background-color: wheat;
+}
+
+
+.score{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 2em;
+    color: var(--main-clr);
+    font-weight: 600;
+
+}
+.score div{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.score span{
+    color: #bd8d68 ;
+    padding-bottom:35%;
+}
+
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: var(--head-clr);
+    color: #bd8d68;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.footer a{
+    color: #bd8d68;
+}
+.footer span{
+    display: flex;
+    justify-content: center; 
+    gap: 0.3em;
+}
+    
+
+
+/* Animation from => https://codepen.io/jakejarvis/pen/pBZWZw */
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+  
+  
+  
