@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    
+}
+.background{
+    font-family: "Pixelify Sans", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background .txt{
+    background-color: rgba(0, 0, 0, 0.135);
+    padding: 1em 2.2em;
+    position: absolute;
+    top: 40%;
+    font-size: 3em;
+    color: aliceblue;
+}
+.background img{
+    
+    position: relative;
+    height: 100vh;
+}
+.background .img{
+    filter: blur(5px);
+
+}
+.cnt{
+    background-color: #87b1b975;
+    width: 100%;
+
+}
+
+.cnt h3{
+    justify-self:  center;
+    padding: 2em;
+    font-size: 3em;
+    color: #E03132;
+}
+
+.cnt .form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form{
+    margin-left: 0;
+    background-color: #eab77965;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+form legend{
+    text-transform: uppercase;
+    font-size:medium;
+}
+form .name,.auth,.info{
+    display: flex;
+    gap: 20em;
+}
+form input{
+    border: 1px solid rgba(255, 255, 255, 0.536);
+    border-radius: 5px;
+    background-color: #ffffffcb;
+    width: 25vh;
+    height: 2em;
+    padding: 1em;
+}
+button{
+    padding: 0.4em 0.6em;
+    width: 7em;
+    font-size: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.536);
+    background-color: #E03132;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+
+
+
+
+}

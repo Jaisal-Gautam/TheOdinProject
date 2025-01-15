@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="img">
+            <img src="./bg.jpg" alt="Arcade Joystick">
+        </div>
+        <div class="txt">
+            <h1>ARCADE</h1>
+        </div>
+    </div>
+    <div class="cnt">
+        <h3>Not a Real Sign-Up Form</h3>
+
+        <div class="form">
+            <form action="post">
+                <div class="name">
+                    <div class="fn">
+                        <legend>First Name</legend>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="ln">
+                        <legend>Last Name</legend>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="mail">
+                        <legend>E-Mail</legend>
+                        <input type="email" name="mail" id="mail" required>
+                    </div>
+                    <div class="ph-no">
+                        <legend>Phone number</legend>
+                        <input type="tel" name="ph-no" id="ph-no" required>
+                    </div>
+                </div>
+                <div class="auth">
+                    <div class="pass">
+                        <legend>Password</legend>
+                        <input type="password" name="pass" id="pass" required>
+                    </div>
+                    <div class="pass">
+                        <legend>Confirm Password</legend>
+                        <input type="password" name="confirm-pass" id="confirm-pass" required>
+                    </div>
+                </div>
+
+                <button id="confirm-btn" type="submit">Sign Up</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
