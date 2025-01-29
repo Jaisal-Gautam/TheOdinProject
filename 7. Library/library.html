@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>My Library</h1>
+    </nav>
+    <div class="bookAdd">
+        <button id="openModal">Add Book</button>
+        <dialog id="dialog">
+            <h2>Enter details</h2>
+            <form>
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="author">
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div class="page">
+                    <label for="pageno">Page No:</label>
+                    <input type="number" name="pageno" id="pageno">
+                </div>
+                <div class="status">
+                    <label for="status">Stauts:</label>
+                    <input type="checkbox" name="status" id="status">
+                    <p id="statusInfo">Read</p>
+                </div>
+                <button type="button" id="closeModal">Close</button>
+                <button id="submitBook">Add</button>
+            </form>
+        </dialog>
+    </div>
+
+    <div class="bookShowCase">
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

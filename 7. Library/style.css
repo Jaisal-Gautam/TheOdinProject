@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#dialog{
+    background-color: #00000040;
+    color: #fff;
+    box-shadow: 5px 5px 20px 15px rgba(255, 255, 255, 0.6);
+    margin: auto;
+    border: none;
+    border-radius: 6px;
+    padding: 2em;
+    font-size: 1.2em;
+    font-family: serif;
+}
+#dialog h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+#dialog::backdrop{
+    background-color: rgba(0,0,0,0.8);
+}
+form{
+    display: grid;
+    grid-template-rows: 1em 1em;
+    gap: 1em;
+    grid-template-areas: 
+    'name author'
+    'pageno status';
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+#dialog button{
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-family: inherit;
+}
+.name{
+    grid-area: name;
+}
+.author{
+    grid-area: author;
+}
+.page{
+    grid-area:pageno ;
+}
+.status{
+    grid-area: status;
+}
+
+
+.bookAdd{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#openModal{
+    padding: 1em;
+    font-size: 1.2em;
+    background-color: #00000082;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font: inherit;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+.bookShowCase{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bookCard{
+    text-wrap: 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    max-width: 100px;
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+}
