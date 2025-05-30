@@ -52,7 +52,6 @@ submitBook.addEventListener('click',()=>{
 })
 
 
-addBookToLibrary('Jaisal','aguitam',21,'read')
 
 
 //Books Info Array Declaration and storing

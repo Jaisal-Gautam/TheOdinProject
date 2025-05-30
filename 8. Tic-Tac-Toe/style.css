@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.897);
+
+}
+h1{
+   padding: 1em;
+   font-size: 3em; 
+   display: flex;
+   justify-content: center;
+   color: rgba(159, 213, 255, 0.488);
+   font-weight: 900;
+}
+.gameScore{
+    color: antiquewhite;
+    margin:0em 15em;
+    display: flex;
+    padding: 1em;
+    font-size: 1.5em;
+    align-items: center;
+}
+.Score{
+    display: flex;
+    gap: 20em;
+}
+
+.gameBoard{
+    display: grid;
+    grid-template-areas: 'r0',
+    'r1',
+    'r2';
+    margin-top: 3em;
+}
+
+.gameBoard .column{
+    color: rgba(255, 198, 198, 0.682);
+    margin: 1px;
+    padding: 1.5em;
+    border: 2.5px solid white;
+    font-size: 2em;
+
+}
+.r0{
+    grid-area: "r0";
+}
+.r1{
+    grid-area: "r1";
+}
+.r2{
+    grid-area: "r2";
+}
+.r0,.r1,.r2{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 198, 198, 0.682);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.3em;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #464646;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 5px;
+}
