@@ -31,7 +31,11 @@ h1{
     display: flex;
     gap: 20em;
 }
-
+.human,.Computer{
+    display: flex;
+    gap: 0.2em;
+    font-size: 1.3em;
+}
 .gameBoard{
     display: grid;
     grid-template-areas: 'r0',
@@ -45,7 +49,10 @@ h1{
     margin: 1px;
     padding: 1.5em;
     border: 2.5px solid white;
-    font-size: 2em;
+    font-size: 2.5em;
+    width: 4em;              
+    height: 4em;     
+
 
 }
 .r0{
