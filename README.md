@@ -10,3 +10,4 @@ Programs I built while following TheOdinProject:-
 6. Admin Dashboard
 7. Library Data
 8. Tic Tac Toe Game
+9. Restaurant Page
