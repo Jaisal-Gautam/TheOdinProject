@@ -1,5 +1,5 @@
 {
-  "name": "10.to-do-list",
+  "name": "todolist",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
-    "date-fns": "^4.1.0"
+    "date-fns": "^4.1.0",
+    "vanilla-calendar-pro": "^3.0.4"
   }
 }

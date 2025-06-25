@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queit</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a href="#" class="logo">
+            <img src="./assets/Logo.png" alt="">
+            <h4>Queit</h4>
+        </a>
+        <div class="searchBar">
+            <input placeholder="🔍 Search" type="text">
+        </div>
+        <div class="Tags">
+            <div class="Sections">
+                <h4>Sections</h4>
+                <ul>
+                    <li id="alltasks">All Tasks</li>
+                    <li id="starred">Starred</li>
+                    <li id="today">Today</li>
+                    <li id="future">Future</li>
+                    <li id="overdue">Overdue</li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+
+    </aside>
+
+    <section class="content">
+        <div class="header">
+            <div class="headerPartOne">
+                <div class="sectionSelected">
+                    Today
+                </div>
+                <div class="currentDate">13<sup>th</sup> Monday, 2025</div>
+            </div>
+            <div class="headerPartTwo">
+                <button class="newTask" id="openModal"> New Task</button>
+                <dialog class="dialog">
+                    <form>
+                        <div class="formTitle">
+                            <label for="taskTitleForm">Title:</label>
+                            <input type="text" name="taskTitleForm" id="taskTitleForm" required>
+                        </div>
+                        <div class="formProject">
+                            <label for="taskProjectForm">Project:</label>
+                            <input type="text" name="taskProjectForm" id="taskProjectForm" required>
+                        </div>
+                        <div class="formDueDate">
+                            <label for="taskDueForm">Due:</label>
+                            <input type="date" name="taskDueForm" id="taskDueForm" required>
+                        </div>
+                        <div class="formPriority">
+                            <label for="taskPriorityForm">Project:</label>
+                            <select id="taskPriorityForm" name="taskPriorityForm" required> 
+                                <option value="Low">Low</option>
+                                <option value="Normal">Normal</option>
+                                <option value="High">High</option>
+                            </select>
+                        </div>
+                        <div class="actionButtons">
+                            <button class="closeModal">Close</button>
+                            <button class="submit">Add Task</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+        </div>
+
+        <div class="tasksShowCase">
+            
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="completedTask">
+
+        <div class="header">Completed task</div>
+        <div class="completedTasks">
+            
+                </div>
+            </div>
+
+
+    </section>
+</body>
+
+</html>

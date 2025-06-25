@@ -1,0 +1,55 @@
+.dialog{
+    background-color: #12893a43;
+    color: #fff;
+    margin: auto;
+    border: none;
+    border-radius: 6px;
+    padding: 2em;
+    font-size: 1.2em;
+    border: 3px solid #128939;
+}
+
+.dialog::backdrop{
+    background-color: rgba(200, 214, 200, 0.644);
+    backdrop-filter: blur(1px);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+label{
+    font-weight: 600;
+    color: #737373;
+}
+
+
+input,select{
+    outline: none !important;
+    padding: 0.75em;
+    font-size: 0.75em;
+    border-radius: 10px;
+    border: 2px solid #128939;
+    width: 10em;
+    text-align: center;
+}
+
+.actionButtons{
+    display: flex;
+    justify-content: space-around;
+}
+.actionButtons button{
+    padding: 0.5em 1em;
+    outline: none !important;
+    font-size: 0.75em;
+    border: 2px solid #128939;
+    border-radius: 10px;
+    
+}
+
+form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,9 +1,8 @@
-// webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "development", // ✅ This fixes the warning
   entry: "./src/index.js",
   output: {
     filename: "main.js",
@@ -12,7 +11,10 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
+    static: "./dist",
     watchFiles: ["./src/template.html"],
+    port: 3000,
+    open: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
