@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar{
+    background-color:#1F2937 ;
+    padding:10px 200px;
+    font-family: Roboto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:50px;
+
+
+}
+
+.logo{
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 600;
+}
+
+.header-links ul{
+    font-size: 18px;
+    color: #f9faf8;
+    display: flex;
+    gap:25px;
+    
+}
+
+.dropdown img{
+    height: 40px;
+}
+.menu{
+    display: none;
+    background-color: #f9faf8;
+
+}
+
+a{
+    color: red;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 10px;
+    gap: 15px;
+    font-size: 15px;
+    background-color: #f9faf8;
+    color: inherit;
+    padding-bottom:5px ;
+    border-bottom: 2px solid ;
+}
