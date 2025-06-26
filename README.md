@@ -13,3 +13,4 @@ Programs I built while following TheOdinProject:-
 9. Restaurant Page
 10. ToDoList
 11. Dropdown Menu
+12. Image Carousel
