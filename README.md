@@ -1,6 +1,6 @@
 # TheOdinProject
 
-Programs I built while following TheOdinProject:-
+Projects I built while following TheOdinProject:-
 
 1. Recipes Page
 2. Landing Page
