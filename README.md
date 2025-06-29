@@ -20,6 +20,8 @@ Welcome! This repository contains all the web development projects I’ve built 
 | 10  | ToDoList             | Task tracker with localStorage          |
 | 11  | Dropdown             | Custom dropdown component using JS      |
 | 12  | ImageCarousel        | Image slider with left-right controls   |
+| 13  | FormValidation       | Custom HTML form with JavaScript validation   |
+
 
 ---
 
