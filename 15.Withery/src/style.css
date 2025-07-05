@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --clr-main:#F7F6F9;
+    --clr-card:#FFFFFF;
+    --clr-txt-blk:#191919;
+    --clr-txt-grey:#BFBFBF;
+    --clr-body:#D6D7DB;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+body{
+    background-color: var(--clr-body);
+    padding:60px;
+}
+
+.container{
+    background-color: var(--clr-main);
+    border-radius:30px;
+    display: flex;
+}
+
+
+/* Sidebar CSS */
+.sidebar{
+    font-family: "Inter",sans-serif;
+    background-color: var(--clr-card);
+    border-radius:30px 0px 0px 30px;
+    width: 25vw;
+    height: 85vh;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.search input{
+    color: var(--clr-txt-blk);
+    font-size: 18px ;
+    padding: 10px;
+    border: none;
+    background-color: inherit;
+    width: 87%;
+    outline: none;
+}
+
+
+.todayWeather{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 1em;
+
+}
+.mainIcon{
+    height: 12em;
+    width: 12em;
+}
+.temp{
+    font-size: 4em;
+    font-weight: 300;
+
+}
+.temp sup{
+    font-size: 40px;
+}
+
+.date{
+    font-size: 1.2em;
+    font-weight: 400;
+
+
+
+}
+
+.weatherCond{
+    font-size: 16px;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+hr{
+    margin-bottom: 1em;
+}
+.weatherCond img{
+    height:1.7em ;
+    width: 1.7em;
+    display: block;
+}
+.cond,.rain{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.place{
+    font-size: 2em;
+
+}
+
+.mainCnt{
+    width: 67vw;
+    height: 85vh;
+    padding: 3em;
+    font-family: "Rubik", sans-serif;;
+
+}
+/* Header CSS */
+.header{
+    width: 58vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.options{
+    display: flex;
+    gap: 1em;
+    font-size: 1.7em;
+    color: var(--clr-txt-grey);
+    cursor: pointer;
+}
+
+.selectedOption{
+    padding-bottom: 2px;
+    color: var(--clr-txt-blk);
+    border-bottom: 2px solid var(--clr-txt-blk);
+}
+
+.tempOptions ul{
+    display: flex;
+    gap: 1em;
+    font-size: 1.7em;
+    padding: 20px;
+    color: var(--clr-txt-grey);
+    cursor: pointer;
+
+}
+
+.Selected{
+    color:var(--clr-txt-blk)
+}
+/* Days/Time Tiles CSS */
+
+.headerHighlight{
+    margin-bottom: 2em;
+    display: flex;
+    gap: 5px;
+}
+.tile{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    align-items: center;
+    padding: 1em;
+    border-radius: 10px;
+    height: 140px;
+    width: 150px;
+    background-color: var(--clr-card);
+
+}
+.tile img{
+    height: 50px;
+    width: 50px;
+}
+
+.tile .tileTemp{
+    gap: 0.5em;
+    display: flex;
+}
+.tile .tempLow{
+    color: var(--clr-txt-grey);
+}
+
+.Highlights{
+    margin-bottom: 4.5em;
+}
+.Highlights h3{
+    font-size: 1.7em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.highlightCnt{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.highlightTile{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    align-items: left;
+    padding: 1.5em;
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+    background-color: var(--clr-card)   
+}
+
+.highlightHead{
+    color: var(--clr-txt-grey);
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+.highlightInfo{
+    height: 58px;
+    width: 58px;
+    margin-bottom: 1em;
+    align-self: center;
+}
+.highlightInfo img{
+    height: 64px;
+    width: 64px;
+    border-radius: 25px;
+}
+.highlightInfo2{
+    color: var(--clr-txt-blk);
+    display: flex;
+    font-size: 1.4em;
+    margin-bottom: 0.75em;
+    font-weight: 400;
+}
+.suntime{
+    justify-content: space-between;
+}
+.sunset{
+    color: var(--clr-txt-grey);
+
+}
+.pollution img{
+    transform: translate(-40px,-10px);
+    height: 120px;
+    width: 120px;
+}
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 0, 0, 0.93); 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  display: none;
+  color: #F7F6F9; 
+}

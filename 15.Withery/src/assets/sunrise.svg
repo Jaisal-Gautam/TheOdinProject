@@ -1,0 +1,26 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="sunsetGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A33"/>
+      <stop offset="100%" stop-color="#FFCC80"/>
+    </linearGradient>
+
+    <!-- Sun Gradient -->
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFFFE0"/>
+      <stop offset="100%" stop-color="#FFD740"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Sky -->
+  <rect width="256" height="256" fill="url(#sunsetGradient)" />
+
+  <!-- Sun -->
+  <circle cx="128" cy="128" r="40" fill="url(#sunGradient)" />
+
+  <!-- Hills (stylized using curves) -->
+  <path d="M0 200 Q50 190 90 195 T160 192 Q200 190 256 200 V256 H0 Z" fill="#FFB74D"/>
+  <path d="M0 220 Q80 210 130 215 T256 220 V256 H0 Z" fill="#F57C00"/>
+  <path d="M0 240 Q100 230 180 235 T256 240 V256 H0 Z" fill="#E64A19"/>
+</svg>

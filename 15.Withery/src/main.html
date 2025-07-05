@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Withery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="search">
+          <input placeholder="🔍 Search for Places..." type="text" />
+        </div>
+        <div class="todayWeather">
+          <div class="mainIcon">
+            <img id="mainIcon" src="" alt="" />
+          </div>
+          <div class="temp">12 <sup>° C</sup></div>
+          <div class="date">Monday, 16:00</div>
+        </div>
+        <hr />
+        <div class="weatherCond">
+          <div class="cond">
+            <img id="condImg" src="./assests/Sun.svg" alt="" />
+            <div id="condDisc">Mostly Cloudy</div>
+          </div>
+          <div class="rain">
+            <img id="rainImg" src="./assests/Sun.svg" alt="" />
+            <div id="rainDisc">Rain - 80%</div>
+          </div>
+        </div>
+        <div class="place">New York, USA</div>
+      </div>
+      <div class="mainCnt">
+        <div class="header">
+          <div class="leftSideHeader">
+            <ul class="options">
+              <li id="Today">Today</li>
+              <li id="Week">Week</li>
+            </ul>
+          </div>
+
+          <div class="rightSideHeader">
+            <div class="tempOptions">
+              <ul>
+                <li class="Celcius Selected">°C</li>
+                <li class="Farenheit">°F</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="headerHighlight"></div>
+
+        <div class="Highlights">
+          <h3>Today's Highlights</h3>
+          <div class="highlightCnt">
+            <div class="highlightTile">
+              <div class="highlightHead">Humidity</div>
+              <div class="highlightInfo">
+                <img src="./assets/Humidity.svg" alt="" />
+              </div>
+              <div class="highlightInfo2" id="Humidity">9 <sup>%</sup></div>
+            </div>
+            <div class="highlightTile">
+              <div class="highlightHead">Sunrise & Sunset</div>
+              <div class="highlightInfo">
+                <img src="./assets/sunrise.svg" alt="" />
+              </div>
+              <div class="highlightInfo2 suntime">
+                <div class="sunrise">5:30 ↑</div>
+                <div class="sunset">18:27 ↓</div>
+              </div>
+            </div>
+            <div class="highlightTile">
+              <div class="highlightHead">Wind Status</div>
+              <div class="highlightInfo">
+                <img src="./assets/Wind.svg" alt="" />
+              </div>
+              <div class="highlightInfo2" id="Wind">72km/h - ESE</div>
+            </div>
+            <div class="highlightTile">
+              <div class="highlightHead">UV Index</div>
+              <div class="highlightInfo pollution">
+                <img src="./assets/UV.svg" alt="" />
+              </div>
+              <div class="highlightInfo2" id="UV">450</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loader">
+      <dotlottie-player
+      src="https://lottie.host/ce858bc9-e0bf-49b3-917f-faff8b887060/JUuqgO6PgC.lottie"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      loop
+      autoplay
+    ></dotlottie-player>
+    <h2>Loading...</h2>
+    </div>
+    
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

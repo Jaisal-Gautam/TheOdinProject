@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lightBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="100%" stop-color="#90CAF9"/>
+    </linearGradient>
+    <linearGradient id="deepBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64B5F6"/>
+      <stop offset="100%" stop-color="#1E88E5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left droplet -->
+  <path d="M156 100C156 100 60 230 60 312C60 380 116 440 184 440C252 440 308 380 308 312C308 230 212 100 212 100C204 90 188 90 180 100Z"
+        fill="url(#lightBlue)" opacity="0.8"/>
+
+  <!-- Right droplet -->
+  <path d="M356 100C356 100 260 230 260 312C260 380 316 440 384 440C452 440 508 380 508 312C508 230 412 100 412 100C404 90 388 90 380 100Z"
+        fill="url(#lightBlue)" opacity="0.8"/>
+
+  <!-- Center droplet -->
+  <path d="M256 60C256 60 140 230 140 344C140 430 212 500 304 500C396 500 468 430 468 344C468 230 352 60 352 60C340 45 272 45 256 60Z"
+        fill="url(#deepBlue)"/>
+</svg>
