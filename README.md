@@ -49,7 +49,8 @@ Welcome! This repository contains all the web development projects I’ve built 
 
 ## 👨‍💻 Author
 
-Jaisal Gautam 
-Learning full-stack web development through The Odin Project.  
+*Jaisal Gautam*
+
+->Learning full-stack web development through The Odin Project.  
 
 ---
