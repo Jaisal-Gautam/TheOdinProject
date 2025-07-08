@@ -21,7 +21,9 @@ Welcome! This repository contains all the web development projects I’ve built 
 | 11  | Dropdown             | Custom dropdown component using JS      |
 | 12  | ImageCarousel        | Image slider with left-right controls   |
 | 13  | FormValidation       | Custom HTML form with JavaScript validation   |
-|14|  Random Cat GIF Generator | A simple random cat GIF generator using the GIPHY API|
+| 14  | Random Cat GIF Generator | A simple random cat GIF generator using the GIPHY API|
+|15| Withery| Modern weather app using geolocation and Visual Crossing API with dynamic UI updates|
+
 
 
 ---
