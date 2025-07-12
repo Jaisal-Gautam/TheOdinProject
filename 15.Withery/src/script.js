@@ -7,7 +7,7 @@ async function weatherData(place) {
   }
 
   const serverData = await fetch(
-    `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place}?key=55M43DUZ6BFPEWYRKFQAZZY3L&unitGroup=${defaultTemp}`
+    `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place}?key=9UPLAKJ43L6QDPWM9A3XDM3Y8&unitGroup=${defaultTemp}`
   );
 
   await new Promise((resolve) => setTimeout(resolve, 1500));
@@ -33,9 +33,7 @@ Farenheit.addEventListener("click", () => {
   Farenheit.classList.add("Selected");
   tempOption = 1;
   symbol = "F";
-  appSearch(
-
-  );
+  appSearch();
 });
 
 let tempOption = 0;
@@ -68,9 +66,18 @@ function SideBarUpdate(place) {
 
     //Date Update
     let currentDate = document.querySelector(".date");
-    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const weekday = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
     const d = new Date();
-     currentDate.innerHTML=weekday[d.getDay()]+", "+d.getHours()+":"+d.getMinutes();
+    currentDate.innerHTML =
+      weekday[d.getDay()] + ", " + d.getHours() + ":" + d.getMinutes();
 
     //Feature Update
 
@@ -87,7 +94,7 @@ function SideBarUpdate(place) {
 
     //Location Update
     let loc = document.querySelector(".place");
-    place =  await addressName(response.latitude,response.longitude);
+    place = await addressName(response.latitude, response.longitude);
     loc.innerHTML = place;
 
     //Main Update
@@ -95,10 +102,15 @@ function SideBarUpdate(place) {
 }
 
 async function addressName(lat, lon) {
-  let serverData = await fetch(
-    `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=7c8ff2b3fd3b455f1d44b1907bf940f3`
-  );
-  let data = await serverData.json();
+  const url = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=04963a3af5dfdf6c7778e282939d2ec9`;
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  if (!data || !data[0]) {
+    return "Unknown Location";
+  }
+
   return data[0].name + ", " + data[0].country;
 }
 
@@ -243,29 +255,25 @@ function CntUpdate(place) {
   MainOptionUpdate(place);
 }
 
+let search = document.querySelector("input");
+search.addEventListener("keydown", (e) => {
+  if (e.key == "Enter") {
+    place = search.value;
+    appSearch();
+    search.value = "";
+  }
+});
+let place = "";
 
-
-let search=document.querySelector("input");
-search.addEventListener("keydown",(e)=>{
-    if(e.key=="Enter"){
-        place=search.value;
-        appSearch()
-        search.value="";
-    }
-})
-let place="";
-
-function appSearch(){
-    if(place!=""){
-        CntUpdate(place)
-        weatherData(place).catch(err=>{
-        alert("Can not get data");
-        alert("Redirecting to your Location")
-        currentLocation()
-})
-    }
-    else{
-        currentLocation()
-    }
+function appSearch() {
+  if (place != "") {
+    CntUpdate(place);
+    weatherData(place).catch((err) => {
+      alert("Can not get data");
+      alert("Redirecting to your Location");
+      currentLocation();
+    });
+  } else {
+    currentLocation();
+  }
 }
-
