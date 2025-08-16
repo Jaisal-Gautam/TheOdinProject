@@ -1,0 +1,33 @@
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form input{
+    width: 600px ;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px ;
+    border:2px solid rgb(159, 159, 159) ;
+    font-size: 16px;
+}
+.form button{
+    font-family: inherit;
+    width: 200px;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px ;
+    border:none ;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+

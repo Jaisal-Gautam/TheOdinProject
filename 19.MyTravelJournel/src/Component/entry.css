@@ -1,0 +1,41 @@
+.card{
+    border-radius: 20px;
+    padding: 25px;
+    background-color: rgba(245, 229, 229, 0.501);
+    margin: 20px 350px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(59, 59, 59);
+    width: 800px;
+    margin-bottom: 30px;
+}
+a{
+    color: inherit;
+}
+img{
+    border-radius: 16px;
+}
+.cnt{
+    padding: 50px 0px;
+}
+.cnt-head{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+
+.cnt-name h2{
+    font-size: 36px;
+    color: rgb(27, 27, 27);
+    margin-bottom: 25px;
+}
+
+.cnt-date h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cnt-text p{
+    font-size: 18px;
+}

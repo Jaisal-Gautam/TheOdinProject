@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+img{
+    width: 40px;
+}
+nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+.logo{
+    padding: 8px ;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.cart button{
+    padding: 8px 16px ;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #00e1ff;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+.cart button:hover {
+    animation: scaleUp 0.2s ease  normal forwards;
+    cursor: pointer;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.25);
+    }
+}

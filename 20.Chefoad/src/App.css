@@ -1,0 +1,6 @@
+.app{
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    flex-direction: column;
+}

@@ -1,0 +1,53 @@
+
+.form{
+  max-width: 60vb ;
+  padding: 10px;
+  height: 100vh;
+}
+form{
+  border: 2px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.personalInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+  font-size: 20px;
+}
+h3{
+  align-self: center;
+  font-size: 24px;
+}
+button{
+  padding: 12px;
+  font-size: 16px;
+  max-width: 150px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.personalInfo div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personalInfo div input{
+  padding: 5px ;
+}
+.eduInfo,.skillsInfo,.workInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.eduInfo form{
+  border: none;
+}
