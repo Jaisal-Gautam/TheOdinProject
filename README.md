@@ -1,3 +1,6 @@
+
+-- Stopped Adding to this Repo--
+
 # 📚 The Odin Project Practice Repository
 
 Welcome! This repository contains all the web development projects I’ve built while following [The Odin Project](https://www.theodinproject.com/) curriculum. Each folder represents a project I completed as part of my hands-on learning journey through HTML, CSS, JavaScript, and DOM manipulation.
